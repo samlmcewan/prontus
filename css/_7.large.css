@@ -4,4 +4,11 @@
     .card-service svg:first-of-type {
         margin-top: -4rem;
     }
+    .home-about .container-fluid {
+        padding-left: 5rem;
+    }
+   .home-about .corner-svg {
+        width: 18vw;
+
+   }
 }

@@ -6,6 +6,7 @@
 body {
     /* font-family: "Roboto", sans-serif; */
     font-family: "Cabin", sans-serif;
+    font-size: 1.125rem;
 }
 .line-title {
     text-align: center;
@@ -339,4 +340,34 @@ a.card-service p {
 }
 .services .card-service:hover svg g path, .services .row .col:nth-child(2n) .card-service:hover svg g path {
     fill: var(--gray3)!important;
+}
+
+/*--------------------------------------------------------------
+# Home About
+--------------------------------------------------------------*/
+.home-about .container-fluid {
+    position: relative;
+}
+.home-about {
+    background-color: var(--blue);
+}
+
+.home-about .lead {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+.home-about p {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+.home-about .corner-svg {
+    position: absolute;
+    width: 35vw;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+    
+}
+.home-about .container-fluid .text-col p:last-of-type {
+    margin-bottom: 0;
 }
