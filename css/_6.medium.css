@@ -1,5 +1,24 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-    
+    .hero .circle-text-svg {
+        /* width: 30rem; */
+        width: 52vw;
+        /* margin-left: 15rem; */
+        margin-left: 48vw;
+        
+
+    }
+
+    .hero img {
+        object-position: center;
+        /* border-bottom-right-radius: 150px; */
+    }
+    svg .text-container p span {
+        line-height: 1.75rem;
+    }
+    .corner-svg {
+        width: 22vw;
+    }
+
 }

@@ -26,6 +26,7 @@ body {
     transition: all .3s;
 }
 
+
 #main-nav .btn {
     font-size: 18px;
 }
@@ -158,65 +159,7 @@ body {
         width: 11rem;
     }
 
-/* Main nav dropdowns  */
-#main-nav .nav-item:hover a:not(#main-nav .dropdown a){
-    /* color: var(--yellow); */
-}
-#main-nav .nav-item:active a:not(#main-nav .dropdown a){
-    /* color: var(--red); */
-}
-#main-nav .dropdown-menu {
-    margin-top: .75rem;
-}
-.navbar-nav .nav-item, .navbar ul li:first-child:not #main-nav .dropdown ul li {
-    padding: 1rem calc(var(--bs-gutter-x) * .5);
-}
 
-#main-nav .dropdown ul {
-    /* background-color: var(--lightGray); */
-    border: none;
-    transition: all .3s;
-}
-
-#main-nav .dropdown a:active:not(#main-nav .dropdown ul li a:active) {
-    color: #ffffff;
-}
-#main-nav .dropdown a:hover:not(#main-nav .dropdown ul li a:hover) {
-    color: var(--lightGray);
-}
-
-#main-nav .dropdown-item:active {
-    color: var(--green);
-    background-color: var(--white);
-}
-#main-nav .dropdown-item:hover {
-    color: var(--green);
-    background-color: var(--white);
-}
-
-.dropdown-toggle[aria-expanded="true"]::after {
-    transform: rotate(180deg);
-    /* transform-origin: 50% 50%; */
-    vertical-align: -0.1em;
-    margin-top: .2em;
-}
-#main-nav .dropdown-item {
-    padding-top: .35rem;
-    padding-left: 1rem;
-}
-#main-nav .dropdown-item:last-of-type {
-    padding-bottom: .35rem;
-}
-#main-nav .nav-item.active.dropdown {
-    background-color: var(--green);
-}
-#main-nav .nav-item.active.dropdown a {
-    color: var(--white)!important;
-}
-#main-nav .nav-item.active ul li .dropdown-item {
-    background-color: var(--green)!important;
-    color: var(--white)!important;
-}
 #main-nav .nav-item.active ul {
     background-color: var(--green)!important;
 }
@@ -238,4 +181,67 @@ z-index: 9;
 }
 .top-contact a {
     text-decoration: none;
+}
+
+.top-contact a:hover {
+    color: var(--green)!important;
+}
+
+/*--------------------------------------------------------------
+# SVGs
+--------------------------------------------------------------*/
+
+svg .text-container p {
+    color: var(--blue);
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 3.5rem;
+}
+svg .text-container p span {
+    line-height: 2.1rem;
+    padding-bottom: 1.25rem;
+}
+svg .text-container div p span {
+    color: var(--blue);
+}
+
+svg .text-container div p span {
+    margin-top: -1rem;
+}
+foreignObject.text-container {
+    padding: 0 2rem;
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+.hero {
+    height: fit-content;
+}
+.hero .swiper-slide {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.hero .circle-text-svg {
+    padding: 2rem 1rem 1rem 2rem;
+}
+
+.hero img {
+    /* border-bottom-right-radius: 30%; */
+}
+.corner-svg {
+    position: absolute;
+    width: 35vw;
+    /* margin-left: 85vw; */
+    bottom: 0;
+    right: 0;
 }

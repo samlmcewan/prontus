@@ -7,6 +7,9 @@
     #main-nav .active a {
         color: var(--green);
     }
+    #main-nav .nav-item a:hover {
+        opacity: 0.68;
+    }
     .navbar-nav .nav-item {
         position: relative;
     }
@@ -26,5 +29,33 @@
     .navbar-nav .nav-item:last-child, .navbar-nav .nav-item:last-child a {
         padding-right: 0;
     }
+
+    .hero .circle-text-svg {
+        width: 32vw;
+        margin-left: 43vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .hero img {
+        border-bottom-right-radius: 12rem;
+        border-bottom-right-radius: 0;
+    }
+    .hero {
+        width: 102%;
+        margin-left: -1%;
+    }
+
+    .corner-svg {
+        position: absolute;
+        width: 18vw;
+        /* margin-left: 85vw; */
+        bottom: -1px;
+        right: 0;
+    }
+    
+
+
+
 }
         
