@@ -1,5 +1,7 @@
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-
+    .card-service svg:first-of-type {
+        margin-top: -4rem;
+    }
 }

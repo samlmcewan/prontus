@@ -19,6 +19,9 @@
     }
     .corner-svg {
         width: 22vw;
+    }.card-service svg:first-of-type {
+        margin-top: -4.5rem;
     }
+
 
 }

@@ -7,7 +7,44 @@ body {
     /* font-family: "Roboto", sans-serif; */
     font-family: "Cabin", sans-serif;
 }
-
+.line-title {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .line-title .title {
+    background-color: var(--white);
+    padding: .5rem 1rem;
+    width: fit-content;
+  }
+  .line-title h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--blue);
+  }
+  
+  .line-title .line {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 100%; 
+    height: 1px;
+    background-color: var(--gray2); 
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .line-title .line:first-child {
+    left: 0;
+  }
+  
+  .line-title .line:last-child {
+    right: 0;
+  }
 /*--------------------------------------------------------------
 # Main Navigation
 --------------------------------------------------------------*/
@@ -244,4 +281,62 @@ foreignObject.text-container {
     /* margin-left: 85vw; */
     bottom: 0;
     right: 0;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.card-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-service img {
+    border-radius: 50%;
+    width: 90%;
+    transition: all .3s ease;
+}
+.card-service svg:first-of-type {
+    margin-top: -5.5rem;
+    width: 100%!important;
+}
+.card-service svg:last-of-type {
+    width: 3rem;
+    transition: all .3s ease;
+}
+a.card-service h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    transition: all .3s ease;
+}
+a.card-service {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a.card-service p {
+    font-size: 1.5rem;
+    color: var(--gray3);
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.services .card-service svg g path, .services .row .col:nth-child(2n) .card-service svg g path {
+    transition: all .3s ease;
+}
+.services .row .col:nth-child(2n) .card-service svg g path{
+    fill: var(--green)!important;
+}
+.card-service:hover h3 {
+    color: var(--gray3);
+}
+.card-service:hover img {
+    opacity: .67;
+}
+.card-service:hover svg:last-of-type {
+    transform: translateY(-1.25rem);
+}
+.card-service:hover svg:last-of-type g polygon {
+    fill: var(--gray3)!important;
+}
+.services .card-service:hover svg g path, .services .row .col:nth-child(2n) .card-service:hover svg g path {
+    fill: var(--gray3)!important;
 }

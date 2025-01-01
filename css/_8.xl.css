@@ -53,6 +53,11 @@
         bottom: -1px;
         right: 0;
     }
+
+    .card-service svg:first-of-type {
+        margin-top: -5.5rem;
+        width: 100%!important;
+    }
     
 
 
