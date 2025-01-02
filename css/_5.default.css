@@ -429,7 +429,7 @@ a.card-service p {
 .zebra {
     position: relative;
 }
-.zebra .corner-svg {
+.zebra .corner-svg, .corner-svg.corner-right {
     position: absolute;
     width: 35vw;
     /* margin-left: 85vw; */
@@ -476,4 +476,250 @@ a.card-service p {
 .get-in-touch .btn-container:hover .btn {
     background-color: var(--blue);
     color: var(--white);
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    font-size: .875rem;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--blue);
+    color: var(--white);
+    position: relative;
+    /* padding-bottom: 6rem; */
+}
+footer .logo-footer {
+    width: 16rem;
+}
+
+
+footer#footer {
+    /* border-top: 2px solid var(--gold); */
+}
+    footer a span {
+        /* color: var(--cyan); */
+    }
+
+    footer .footer-title {
+        font-weight: 300;
+        /* font-family: "Barlow Condensed", sans-serif; */
+        text-transform: uppercase;
+        color: var(--green);
+        font-weight: 700;
+    }
+
+
+
+    footer a {
+        color: var(--white);
+        font-size: .875rem;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+        footer a:hover {
+            /* text-decoration: underline; */
+            color: var(--green);
+        }
+
+            
+       
+.footer-title {
+    font-size: 1.25rem;
+    /*font-weight: 500;*/
+    margin-bottom: 20px;
+}
+footer .navbar-toggler {
+    border: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    padding-left: 2.3rem;
+    text-indent: -1.1rem;
+}
+footer .fa-angle-right {
+   height: 20px;
+}
+footer .fa-angle-down {
+    width: 20px;
+}
+footer .fa-chevron-right {
+    /*color: #ffffff;*/
+    /*color: #ffffff;*/
+    padding-right: 0.2rem;
+}
+
+.shfooter .collapse {
+    display: inherit;
+}
+
+/* .shfooter i::before {
+    color: var(--light);
+} */
+
+
+.resize {
+    text-align: center;
+}
+
+.resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+/* Social footer  */
+footer .fa-brands {
+    width: 7%;
+}
+
+footer .fab:before {
+    font-size: 1.1rem;
+}
+
+.social-footer a:hover svg {
+    /*color: var(--links); */
+    animation: icons-rise 0.3s linear forwards;
+}
+
+#footer .social-logos svg {
+   width: 30px;
+   height: 30px;
+   transition: all .3s;
+}
+#footer .social-logos svg g rect{
+   
+    transition: all .3s;
+ }
+#footer h4 {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+@keyframes icons-rise {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translate(2.5px, -2.5px);
+    }
+}
+
+.social-footer a:hover {
+    text-decoration: none;
+}
+
+    .social-footer a:hover span {
+        text-decoration: underline;
+    }
+
+@keyframes arrow-right {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+
+
+footer hr:not([size]) {
+    height: 1px;
+    /* color: var(--hcs-blue); */
+    opacity: .8;
+}
+
+footer ul li {
+    padding-left: 0;
+    text-indent: 0;
+    /* remove this if issue 616 617 */
+    display: flex;
+    align-items: center;
+}
+
+footer .fa-chevron-right {
+    display: none;
+}
+
+.footer-title {
+    margin-bottom: 0;
+}
+
+.shfooter ul {
+    margin-bottom: 0;
+}
+
+.shfooter .collapse {
+    display: none;
+}
+
+    .shfooter .collapse.show {
+        display: block;
+    }
+
+.shfooter .title .fa-angle-down,
+.shfooter .title[aria-expanded=true] .fa-angle-right {
+    display: none;
+}
+
+.shfooter .title[aria-expanded=true] .fa-angle-down {
+    display: block;
+}
+
+.shfooter .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+}
+
+footer .helpline {
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+footer .helpline:hover {
+    color: var(--green);
+}
+footer li p {
+    margin-bottom: 0;
+}
+
+footer a, footer p, footer h3 {
+    /* color: var(--purple); */
+}
+#footer .navbar-toggler svg {
+    fill: var(--white)!important;
+}
+
+footer ul.styled li a::before {
+    content: "\003E";
+    margin-right: .25rem;
+    display: inline-block;
+    transition: all .3s;
+}
+footer li a:hover::before {
+    transform: translateX(.125rem);
+    color: var(--green);
+}
+
+footer #social svg {
+    width: 2rem;
+}
+#footer h3, #footer .footer-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300!important;
+}
+
+footer li, footer a, footer p {
+    font-weight: 300;
+}
+
+
+footer #social a:hover svg rect, footer #social a:hover svg g rect {
+    fill: var(--gray3)!important;
+}
+footer #social a svg rect, footer #social a svg g rect {
+    transition: all .3s;
 }

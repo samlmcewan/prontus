@@ -27,7 +27,7 @@
         width: 80%;
     }
 
-    .zebra .corner-svg {
+    .zebra .corner-svg, .corner-svg.corner-right {
         width: 22vw;
     }
 

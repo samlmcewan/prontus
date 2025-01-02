@@ -71,19 +71,67 @@
         font-size: 3rem;
     }
 
-    .zebra .corner-svg {
+    .zebra .corner-svg, .corner-svg.corner-right {
         position: absolute;
         width: 18vw;
         /* margin-left: 85vw; */
         bottom: -1px;
         right: 0;
     }
+    .zebra img {
+        width: 325px;
+        height: 325px;
+        object-fit: cover;
+    }
 
     .get-in-touch .container-fluid {
         padding: 8rem 0!important;
     }
 
+    /* Footer - XLarge Devices */
+
+.shfooter .collapse {
+    display: block;
+    }
+    footer .fa-chevron-right {
+    display: inline-block;
+    }
+    footer ul li {
+    margin-bottom: 10px;
+    
+    }
+    footer ul li span {
+        display: inline-block;
+    }
+    footer ul li a:hover span {
+        animation: arrow-right 0.3s linear forwards; 
+              
+          }
+      
+      @keyframes arrow-right {
+        from {
+          transform: translateX(0px); }
+        to {
+          transform: translateX(2px); } 
+          
+      }
+    
+      #footer .footer-title {
+        font-size: 1.5rem;
+      }
+    
 
 
+      #footer h3, #footer .footer-title {
+        font-weight: 300!important;
+    }
+    #footer .logo-footer {
+        /* margin-right: -7rem; */
+    }
 }
         
+@media only screen and (min-width: 1900px) {
+    #footer .logo-footer {
+        margin-right: -5rem;
+    }
+}
