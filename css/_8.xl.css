@@ -71,6 +71,14 @@
         font-size: 3rem;
     }
 
+    .zebra .corner-svg {
+        position: absolute;
+        width: 18vw;
+        /* margin-left: 85vw; */
+        bottom: -1px;
+        right: 0;
+    }
+
 
 
 }
