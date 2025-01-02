@@ -79,6 +79,10 @@
         right: 0;
     }
 
+    .get-in-touch .container-fluid {
+        padding: 8rem 0!important;
+    }
+
 
 
 }

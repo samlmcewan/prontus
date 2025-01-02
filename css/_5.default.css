@@ -436,3 +436,44 @@ a.card-service p {
     bottom: 0;
     right: 0;
 }
+/*--------------------------------------------------------------
+# Get in touch
+--------------------------------------------------------------*/
+.get-in-touch .container-fluid {
+    position: relative;
+}
+.get-in-touch img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.get-in-touch .btn-container {
+    border: 4px solid var(--white);
+    transition: all .3s;
+
+}
+.get-in-touch .btn-container .btn {
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--blue);
+    border-radius: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    transition: all .3s;
+}
+
+.get-in-touch .btn-container:hover {
+    border-color: var(--blue);
+}
+.get-in-touch .btn-container:hover .btn {
+    background-color: var(--blue);
+    color: var(--white);
+}
