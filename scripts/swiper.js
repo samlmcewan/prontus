@@ -3,22 +3,26 @@ const swiper1 = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 5000, 
+    delay: 2500, 
     disableOnInteraction: false,
   },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-  slidesPerView: 1,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  // },
+  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  slidesPerView: 2,
   spaceBetween: 20,
   breakpoints: {
     768: {
-      slidesPerView: 3
+      slidesPerView: 4
       
     },
     992: {
-      slidesPerView: 4
+      slidesPerView: 5
       
     },
     1200: {

@@ -371,3 +371,24 @@ a.card-service p {
 .home-about .container-fluid .text-col p:last-of-type {
     margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# We Use
+--------------------------------------------------------------*/
+
+.we-use .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.we-use .swiper-slide img {
+    width: 80%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #cfcdce!important;
+    transition: all .3s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: var(--pinkBright)!important;
+}
