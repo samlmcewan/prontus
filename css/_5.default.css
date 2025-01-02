@@ -723,3 +723,7 @@ footer #social a:hover svg rect, footer #social a:hover svg g rect {
 footer #social a svg rect, footer #social a svg g rect {
     transition: all .3s;
 }
+.sub-footer {
+    color: var(--gray3);
+    font-size: 1rem;
+}
